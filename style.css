@@ -1,0 +1,61 @@
+:root{
+    --mainColor: #09D3F8;
+    --secondColor: white;
+    --third-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondColor);
+    color: wheat;
+    height: 110px;
+}
+nav .logo img{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    border-radius: 50%;
+}
+    
+nav ul{
+    display: flex;
+    padding-top:35px;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0 8px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--third-color);
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background-color: var(--mainColor);
+    color: var(--third-color);
+    transition: 1s;
+
+}
+nav button{
+    margin-top: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: var(--mainColor);
+    color: black;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: green;
+    color: var(--secondColor);
+    transition: 1s;
+}
