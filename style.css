@@ -8,13 +8,14 @@ body{
     padding: 0;
     font-family: font-family: 'Poppins', sans-serif;
     
+    
 }
 nav{
     
     display: flex;
     justify-content: space-between;
     background-color: var(--secondColor);
-    color: wheat;
+    color: var(--third-color);
     height: 110px;
 }
 nav .logo img{
@@ -71,6 +72,7 @@ section{
 }
 .half-width{
     width: 40%;
+    height: 500px;
     float: left;
     margin-left: 5%;
     padding-left: 2%;
@@ -83,7 +85,8 @@ h1 span{
 }
 .half-width img{
     width: 100%;
-    height: 400px;
+    
+    
 }
 .anchor-button{
     text-decoration: none;
@@ -97,4 +100,67 @@ h1 span{
 .anchor-button:hover{
     background: var(--mainColor);
     color: var(--third-color);
+    transition: 1s;
 }
+.socilaIcon > a{
+    color: blue;
+    text-decoration: none;
+}
+.socilaIcon > a > i{
+    width: 50px;
+    height: 50px;
+    line-height: 1.6;
+    margin: 10px 5px;
+    font-size: 30px;
+    background-color: rgba(0, 128, 0, 0);
+    padding: 5px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.socilaIcon > a > i:hover{
+    background-color: aqua;
+    border: 2px solid green;
+    transform: rotate(360deg);
+}
+
+/* Third section code start hare */
+
+#third-section{
+    background-color: #FAFAFA;
+    margin-top: - 110px;
+}
+.services-area-title{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+.services-area-title > h2{
+    font-size: 40px;
+}
+.each-services-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 60px;
+}
+.services-area{
+    width: 1000px;
+    margin: auto;
+}
+.each-services{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.each-services:hover{
+    background-color: #bfeaf8;
+}
+.each-services > i{
+    font-size: 40px;
+    color: #830707de;
+}
+.each-services > h3{
+    margin: 15px 0;
+}
+
