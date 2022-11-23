@@ -24,6 +24,7 @@ nav .logo img{
     margin: 20px;
     border-radius: 50%;
 }
+
     
 nav ul{
     display: flex;
@@ -164,4 +165,105 @@ h1 span{
 .each-services > h3{
     margin: 15px 0;
 }
+/* main section code start */
+
+.third-section{
+    background-color: #F7F7F9
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#main-section{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+#latest-video-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.latest-video-text {
+    font-size: 25px;
+    color: var(--mainColor);
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+.latest-pages{
+    color: var(--mainColor);
+}
+.latest-pages span{
+    color: black;
+    background-color: antiquewhite;
+    border: 1px solid #8080805b;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+#single-items-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 60px;
+    grid-column-gap: 20px;
+    margin-top: 25px;
+}
+.single-items{
+    height: 250px;
+    border: 3px solid gray;
+}
+.single-items img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.single-items:hover img{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+.single-items div{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* previous next page code */
+
+#previous-next-parent{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#previous-next-parent h3 a{
+    background-color: #04AA6D;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#previous-next-parent h3 a:hover{
+    background-color: #028354;
+}
+#previous-next-parent a{
+    text-decoration: none;
+    color: white;
+}
+#previous-next-parent div a{
+    margin: 0 10px;
+    background-color: antiquewhite;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #80808069;
+}
+#previous-next-parent div a:first-child{
+    background-color: #04AA6D;
+    color: white;
+}
+
+
 
