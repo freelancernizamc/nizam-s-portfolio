@@ -18,11 +18,41 @@ nav{
     color: var(--third-color);
     height: 110px;
 }
-nav .logo img{
+@keyframes forLogo{
+0%{
+    width: 99px;
+    background-color: #02021d;
+    padding: 5px;
+}
+25%{
+    width: 75px;
+}
+50%{
+    width: 80px;
+    padding: 9px;
+}
+75%{
+    width: 90px;
+}
+100%{
+    width: 99px;
+    background-color: #09D3F8;
+    padding: 9px;
+}
+}
+
+ nav .logo img{
     width: 90px;
     height: 90px;
     margin: 20px;
     border-radius: 50%;
+    animation-name: forLogo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: .5s;
+    
+    
 }
 
     
@@ -165,14 +195,14 @@ h1 span{
 .each-services > h3{
     margin: 15px 0;
 }
-/* main section code start */
+/* forth section code start */
 
-.third-section{
+.forth-section{
     background-color: #F7F7F9
     padding-top: 20px;
     padding-bottom: 50px;
 }
-#main-section{
+#parent-section{
     width: 1100px;
     margin: 0 auto;
     padding: 50px 0;
@@ -248,21 +278,14 @@ h1 span{
 #previous-next-parent h3 a:hover{
     background-color: #028354;
 }
-#previous-next-parent a{
-    text-decoration: none;
-    color: white;
-}
-#previous-next-parent div a{
-    margin: 0 10px;
-    background-color: antiquewhite;
-    color: black;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #80808069;
-}
-#previous-next-parent div a:first-child{
-    background-color: #04AA6D;
-    color: white;
+
+
+
+
+.dream-big{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 
