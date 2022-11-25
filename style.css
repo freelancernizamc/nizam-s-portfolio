@@ -155,6 +155,24 @@ h1 span{
     transform: rotate(360deg) scale(.5);
     transition: .9s;
 }
+#facebook{
+    color:  #1877F2;
+}
+#youtube{
+    color: #FF0000
+}
+#instagram{
+    color: #C13584;
+}
+#linkedin{
+    color: #0A66C2;
+}
+#github{
+    color: #150F35;
+}
+#twitter{
+    color: #1D9BF0;
+}
 /* Section section code start */
 
 #second-section{
