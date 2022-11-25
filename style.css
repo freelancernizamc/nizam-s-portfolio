@@ -310,6 +310,7 @@ h1 span{
 .form-single-address span{
     font-weight: bold;
 }
+
 /* forth section code start */
 
 .forth-section{
@@ -376,22 +377,27 @@ h1 span{
     color: gray;
     margin-top: 10px;
 }
-/* previous next page code */
-
-#previous-next-parent{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
+.button{
+    padding: 20px 20px;
+    border-radius: 9px;
+    text-align: center;
+    
+    
 }
-#previous-next-parent h3 a{
-    background-color: #04AA6D;
-    padding: 10px 25px;
+.button a{
+    text-decoration: none;
+    background: linear-gradient(45deg, lightsalmon, tomato, red);
+    font-size: 15px;
+    padding: 10px 40px;
     border-radius: 5px;
-    transition: 0.5s;
+    font-weight: 700;
+    color: var(--secondColor);
 }
-#previous-next-parent h3 a:hover{
-    background-color: #028354;
-}
+.button a:hover{
+        background: var(--mainColor);
+        color: var(--third-color);
+        transition: 1s;
+} 
 
 
 
