@@ -11,46 +11,45 @@ body{
     
 }
 nav{
-    
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     background-color: var(--secondColor);
     color: var(--third-color);
-    height: 110px;
+    height: 100px;
+    
 }
 @keyframes forLogo{
 0%{
-    width: 99px;
-    background-color: #02021d;
-    padding: 5px;
+    background: url(imges/md-nizamuddin\ \(1\).jpeg);
+    background-size: cover;
 }
 25%{
-    width: 75px;
+    background: url(imges/nizam.png);
+    background-size: cover;
 }
 50%{
-    width: 80px;
-    padding: 9px;
+    background: url(imges/background.png);
+    background-size: cover;
 }
 75%{
-    width: 90px;
+    background: url(imges/Md-Nizam-uddin.jpeg);
+    background-size: cover;
 }
 100%{
-    width: 99px;
-    background-color: #09D3F8;
-    padding: 9px;
+    background: url(imges/Nizam\ bd.jpg);
 }
 }
 
- nav .logo img{
-    width: 90px;
-    height: 90px;
-    margin: 20px;
-    border-radius: 50%;
-    animation-name: forLogo;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: .5s;
+ nav .logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    background-image: url(../images/Md-Nizam-uddin.jpeg);
+    background-size: cover;
+    animation: forLogo infinite 5s;
+    border-radius: 50px;
     
     
 }
@@ -93,6 +92,10 @@ nav button:hover{
     color: var(--secondColor);
     transition: 1s;
 }
+#mobile{
+    display: none;
+    align-items: center;
+}
 section{
     height: 500px;
     padding-bottom: 150px;
@@ -116,6 +119,7 @@ h1 span{
 }
 .half-width img{
     width: 100%;
+    
     
     
 }
@@ -491,6 +495,104 @@ hr{
     margin-top: 40px;
 }
 
+#close{
+    display: none;
+}
+/* Responsive code start */
+@media only screen and (max-width: 769px) {
+    
+    nav #menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: bisque;
+        box-shadow: 0 40px 60px rgba(0, 128, 0, 0);
+        padding: 80px 0 0 10px;
+
+    }
+    nav #menu ul.active{
+        right: 0px;
+        
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+        
+    }
+    .header-button{
+        display: none;
+    }
+    #mobile i{
+        color: green;
+        font-size: 20px;
+        
+    }
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: green;
+        font-size: 24px;
+    }
+    nav ul li{
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    nav ul li a:hover, nav ul li a.active{
+        background: none;
+        color: red;
+    }
+    .socilaIcon > a > i{
+        font-size: 30px;
+        padding: 1px;
+        width: 40px;
+        line-height: 1.5;
+    }
+    #second-section{
+        width: 100%;
+    }
+    .smart-image img{
+        width: 300px;
+        margin-right: 0px;
+    }
+    #smart-parent{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .services-area{
+        width: 100%;
+        padding: 10px;
+    }
+    #parent-section{
+        width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+    
+    .contact-container{
+        width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+    }
+    .button a{
+        text-decoration: none;
+        background: linear-gradient(45deg, lightsalmon, tomato, red);
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        color: var(--secondColor);
+    }
+}
 
 
 

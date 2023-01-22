@@ -12,28 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/92ae17eca5.js" crossorigin="anonymous"></script>
+    
 
     <!-- external css file link hare -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
       <nav>
             <div class="logo">
-                <img src="imges/Md-Nizam-uddin.jpeg">
+                
             </div>
            
-            <div class="menu">
+            <div id="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
                 </ul>
+                
             </div>
             <div class="header-button">
                 <a href="https://www.fiverr.com/nizam8181"><button> HIRE ME NOW</button></a>
+            </div>
+            <div id="mobile"> 
+               <i id="bar" class="fas fa-outdent"></i>                
             </div>
         
 
@@ -57,7 +64,7 @@
 
         </div>
         <div class="half-width">
-            <img src="imges/nizam.png">
+          <img src="imges/nizam.png">
 
         </div>
 
@@ -68,7 +75,7 @@
      <h2 class="smart-title"> ABOUT ME</h2>
      <div id="smart-parent">
      <div class="smart-image">
-         <img src="imges/background.png" alt="">
+          <img src="imges/background.png" alt="">
      </div>
      <div class="smart-text">
          <h4> Assalamualikum!</h4>
@@ -318,7 +325,15 @@
 
 
 
-    
+ <script>
+     $('bar').click(function(){
+          $('nav #menu ul').add('active')
+     });
+     $('close').click(function(){
+          $('nav #menu ul').removeClass('active')
+     });
+
+ </script>
 
 </body>
 </html>
