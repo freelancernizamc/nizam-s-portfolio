@@ -429,6 +429,8 @@ h1 span{
 /* Footer section code start */
 
 footer{
+    width: 100%;
+    max-width: 1300px;
     background-color: #023364;
     color: gray;
 }

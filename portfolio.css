@@ -1,8 +1,12 @@
-
-.portfolio{
-	width: 90%;
-	margin: 0 auto;
+*{
+	margin: 0;
+	padding: 0;
 }
+main{
+	width: 75%;
+	margin: auto;
+}
+
 .portfolio-title{
 	text-align: center;
 	font-size: 40px;
@@ -29,5 +33,56 @@ div.gallery {
   div.desc {
 	padding: 25px;
 	text-align: center;
+  }
+  .main-gallary{
+	width: 90%;
+	margin:auto
+
+  }
+  footer{
+	width:100%;
+	height: 500px;
+	background-color: black;
+	
+  }
+  footer img{
+	width: 200px;
+	border-radius: 50%;
+  }
+  .footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: bisque;
+  }
+  footer .footer{
+	padding-top: 50px;
+  }
+  .footer-part2{
+	list-style-type: none;
+  }
+  .footer-part2 a{
+	text-decoration: none;
+	color:bisque;
+	
+  }
+  .footer-part2 a:hover{
+	color:aqua;
+  }
+  .footer h1{
+	color:aqua;
+  }
+  footer h6{
+	text-align: center;
+  }
+  .footer-part3{
+	list-style-type: none;
+  }
+  .footer-part3 a{
+	color:bisque;
+	text-decoration: none;
+  }
+  .footer-part3 a:hover{
+	color:aqua;
   }
   
