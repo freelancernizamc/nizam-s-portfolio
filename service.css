@@ -1,3 +1,89 @@
+footer{
+	width:100%;
+	height: 100%;
 
+	background-color: black;
+	
+  }
+  footer img{
+	width: 200px;
+	border-radius: 50%;
+  }
+  .footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: bisque;
+  }
+  footer .footer{
+	padding-top: 50px;
+  }
+  .footer-part2{
+	list-style-type: none;
+  }
+  .footer-part2 a{
+	text-decoration: none;
+	color:bisque;
+	
+  }
+  .footer-part2 a:hover{
+	color:aqua;
+  }
+  .footer h1{
+	color:aqua;
+  }
+  footer h6{
+	text-align: center;
+  }
+  .footer-part3{
+	list-style-type: none;
+  }
+  .footer-part3 a{
+	color:bisque;
+	text-decoration: none;
+  }
+  .footer-part3 a:hover{
+	color:aqua;
+  }
+  @media only screen and (max-width:576px){
+	nav .logo{
+		width: 50px;
+		height: 50px;
+	}
+	.half-width{
+		width: 100%;
+		height: 500px;
+		float:none;
+		overflow: auto;
+		margin-left: 5%;
+		padding-left: 2%;
+	}
+	nav ul li a{
+		text-decoration: none;
+		font-size: 14px;
+	}
+	.portfolio-title{
+		margin-top: 350px;
+	}
+    
+    
+	.footer{
+		display: inline;
+        
+        overflow: auto;
+  }
+  .footer{
+	text-align: center;
+	margin-top: 5px;
+	padding-top: 5px;
+  }
+  .footer-part3{
+	padding-bottom: 30px;
+  }
+  .footer-part4{
+	text-align: center;
+	
+}
+  }
 
 
