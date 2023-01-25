@@ -435,6 +435,7 @@ footer{
     max-width: 1300px;
     background-color: #023364;
     color: gray;
+    margin-top: 20px;
 }
 .footer-container{
     width: 1000px;
@@ -579,7 +580,7 @@ hr{
         width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-}
+    }
     
     .contact-container{
         width: 100%;
@@ -598,15 +599,16 @@ hr{
     }
 }
 @media only screen and (max-width:576px){
+    header{
+        width: 100%;
+    }
 	nav .logo{
-		width: 50px;
-		height: 50px;
+		width: 70px;
+		height: 70px;
 	}
 	.half-width{
 		width: 100%;
-		height: 500px;
 		float:none;
-		overflow: auto;
 		margin-left: 5%;
 		padding-left: 2%;
 	}
@@ -614,7 +616,59 @@ hr{
 		text-decoration: none;
 		font-size: 14px;
 	}
-
+    #second-section{
+        text-align: center;
+        margin-top: 500px;
+    }
+    #smart-parent{
+        display: inline;
+    }
+    #third-section{
+        margin-top: 550px;
+        margin-bottom: 250px;
+    }
+    .forth-section{
+        margin-top: 70px;
+    }
+    .contact-container{
+        margin-top: 100px;
+    }
+    .form-address-parent{
+        display: none;
+    }
+    .each-services-parent{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    #single-items-parent{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 10px;
+        gap: 5px;
+        grid-column-gap: 10px;
+    }
+    .single-items{
+        width: 60%;
+        height: 60%;
+    }
+    .single-items img{
+        width: 50%;
+        height: 50%;
+    }
+    .footer-singlItem-parent{
+        display:inline;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .single-items div{
+        display: inline;
+    }
+    .button{
+       margin-bottom: 400px;
+        }
+        
+}
 
 
 
