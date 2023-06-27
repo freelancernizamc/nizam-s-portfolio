@@ -1,0 +1,11 @@
+.projects {
+    display: flex;
+}
+
+.text-part {
+    width: 65%;
+}
+
+.gallary {
+    width: 20%;
+}

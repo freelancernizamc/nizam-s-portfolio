@@ -3,13 +3,20 @@ const close = document.getElementById('close');
 const nav = document.getElementById('nav');
 
 if (bar) {
-    bar.addEventListener('click', () =>{
-            nav.classlist.add('active');
-        })
+    bar.addEventListener('click', () => {
+        nav.classlist.add('active');
+    })
 }
 if (close) {
-    close.addEventListener('click', () =>{
-            nav.classlist.remove('active');
-        })
+    close.addEventListener('click', () => {
+        nav.classlist.remove('active');
+    })
 }
 
+// download pdf
+function downloadPDF() {
+    const link = document.createElement('a');
+    link.href = "images/Resume-of-MD-NIZAM-UDDIN.pdf";
+    link.download = 'Resume-of-MD-NIZAM-UDDIN.pdf';
+    link.click();
+}
