@@ -16,7 +16,7 @@ if (close) {
 // download pdf
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = "images/Resume-of-MD-NIZAM-UDDIN.pdf";
+    link.href = "Resume-of-MD-NIZAM-UDDIN.pdf";
     link.download = 'Resume-of-MD-NIZAM-UDDIN.pdf';
     link.click();
 }
