@@ -20,3 +20,29 @@ function downloadPDF() {
     link.download = 'Resume-of-MD-NIZAM-UDDIN.pdf';
     link.click();
 }
+
+// banner animation
+const images = [
+    'imges/nizam.png',
+    'imges/md-nizamuddin\ \(1\).jpeg',
+    'imges/background.png',
+    'imges/Md-Nizam-uddin.jpeg',
+    'imges/Nizam\ bd.jpg',
+    'imges/nizam.png'
+];
+
+let imgIndex = 0;
+const imgE1 = document.getElementById('banner-img');
+
+setInterval(() => {
+    if (imgIndex === images.length) {
+        imgIndex = 0;
+    }
+    const imgUrl = images[imgIndex];
+    console.log(imgIndex, imgUrl);
+
+    imgE1.setAttribute('src', imgUrl);
+    imgE1.classList.add('fade-in-out'); // Add the CSS class for animation
+    imgIndex++;
+}, 1000);
+
