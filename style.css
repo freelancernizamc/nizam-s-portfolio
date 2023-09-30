@@ -8,18 +8,27 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background: url(imges/bg.jpg);
+    color: white;
+
 
 }
 
+
+
 nav {
     width: 100%;
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    background-color: var(--secondColor);
-    color: var(--third-color);
+    align-items: center;
+    background: url(imges/navbg.png);
+    background-position: center;
+    background-size: cover;
+    color: var(--secondColor);
     height: 100px;
+    box-shadow: #bfeaf8;
 
 
 }
@@ -77,7 +86,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    color: var(--third-color);
+    color: var(--secondCsolor);
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -106,6 +115,9 @@ nav button:hover {
     transition: 1s;
 }
 
+
+
+
 #mobile {
     display: none;
     align-items: center;
@@ -114,12 +126,10 @@ nav button:hover {
 section {
     height: 500px;
     padding-bottom: 150px;
+
 }
 
-.top-banner {
-    background-image: url(imges/banner.jpg);
-    background-repeat: no-repeat;
-}
+
 
 .half-width {
     width: 40%;
@@ -151,6 +161,8 @@ h1 span {
 
 }
 
+
+
 .anchor-button {
     text-decoration: none;
     background: linear-gradient(45deg, lightsalmon, tomato, red);
@@ -166,6 +178,8 @@ h1 span {
     color: var(--third-color);
     transition: 1s;
 }
+
+
 
 .socilaIcon>a {
     color: blue;
@@ -209,7 +223,7 @@ h1 span {
 }
 
 #github {
-    color: #150F35;
+    color: #ffffff;
 }
 
 #twitter {
@@ -219,8 +233,9 @@ h1 span {
 /* Section section code start */
 
 #second-section {
-    background: #F7F7F9;
+    color: #F7F7F9;
     padding: 50px 0 100px 0;
+
 }
 
 .smart-title {
@@ -240,7 +255,7 @@ h1 span {
 }
 
 .smart-text {
-    color: var(--third-color);
+    color: var(--secondColor);
 }
 
 .smart-text h2 {
@@ -261,12 +276,13 @@ h1 span {
 
 .smart-image img {
     margin-right: 20px;
+    border-radius: 50px;
 }
 
 /* Third section code start hare */
 
 #third-section {
-    background-color: #FAFAFA;
+    color: #FAFAFA;
     margin-top: - 110px;
 }
 
@@ -294,10 +310,14 @@ h1 span {
 .each-services {
     width: 200px;
     height: 200px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     text-align: center;
     padding: 30px 0;
     transition: 0.5s;
+}
+
+.skills-img {
+    color: white;
 }
 
 .skills-img:hover {
@@ -308,7 +328,7 @@ h1 span {
 }
 
 .each-services:hover {
-    background-color: #bfeaf8;
+    background-color: #0D1321;
 }
 
 .each-services>i {
@@ -335,7 +355,7 @@ h1 span {
 }
 
 .form-parent {
-    background-color: #EAECF0;
+    color: #EAECF0;
     display: flex;
 }
 
@@ -392,6 +412,7 @@ h1 span {
     display: flex;
     padding-top: 50px;
     justify-content: space-between;
+    color: white;
 }
 
 .form-single-address {
@@ -413,7 +434,7 @@ h1 span {
 /* forth section code start */
 
 .forth-section {
-    background-color: #F7F7F9;
+    /* background-color: #F7F7F9; */
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -443,8 +464,8 @@ h1 span {
 }
 
 .latest-pages span {
-    color: black;
-    background-color: antiquewhite;
+    color: white;
+    /* background-color: antiquewhite; */
     border: 1px solid #8080805b;
     padding: 5px;
     border-radius: 4px;
@@ -524,7 +545,7 @@ h1 span {
 footer {
     width: 100%;
     max-width: 1300px;
-    background-color: #150F35;
+    background-image: url(imges/bg.jpg);
     color: gray;
     margin-top: 20px;
 }
@@ -619,205 +640,4 @@ hr {
 
 #close {
     display: none;
-}
-
-/* Responsive code start */
-@media only screen and (max-width: 769px) and (min-width: 577px) {
-
-    nav #menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: bisque;
-        box-shadow: 0 40px 60px rgba(0, 128, 0, 0);
-        padding: 80px 0 0 10px;
-
-    }
-
-    nav #menu ul.active {
-        right: 0px;
-
-    }
-
-    #mobile {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .header-button {
-        display: none;
-    }
-
-    #mobile i {
-        color: green;
-        font-size: 20px;
-
-    }
-
-    #close {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: green;
-        font-size: 24px;
-    }
-
-    nav ul li {
-        margin: 50px 0;
-    }
-
-    nav ul li a {
-        font-size: 22px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-        background: none;
-        color: red;
-    }
-
-    .socilaIcon>a>i {
-        font-size: 30px;
-        padding: 1px;
-        width: 40px;
-        line-height: 1.5;
-    }
-
-    #second-section {
-        width: 100%;
-    }
-
-    .smart-image img {
-        width: 300px;
-        margin-right: 0px;
-    }
-
-    #smart-parent {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .services-area {
-        width: 100%;
-        padding: 10px;
-    }
-
-    #parent-section {
-        width: 100%;
-        margin: 0 auto;
-        padding: 50px 0;
-    }
-
-    .contact-container {
-        width: 100%;
-    }
-
-    .footer-container {
-        width: 100%;
-    }
-
-    .button a {
-        text-decoration: none;
-        background: linear-gradient(45deg, lightsalmon, tomato, red);
-        font-size: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        font-weight: 700;
-        color: var(--secondColor);
-    }
-}
-
-@media only screen and (max-width:576px) {
-    header {
-        width: 100%;
-    }
-
-    nav .logo {
-        width: 70px;
-        height: 70px;
-    }
-
-    .half-width {
-        width: 100%;
-        float: none;
-        margin-left: 5%;
-        padding-left: 2%;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    #second-section {
-        text-align: center;
-        margin-top: 500px;
-    }
-
-    #smart-parent {
-        display: inline;
-    }
-
-    #third-section {
-        margin-top: 550px;
-        margin-bottom: 250px;
-    }
-
-    .forth-section {
-        margin-top: 70px;
-    }
-
-    .contact-container {
-        margin-top: 100px;
-    }
-
-    .form-address-parent {
-        display: none;
-    }
-
-    .each-services-parent {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-    }
-
-    #single-items-parent {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-row-gap: 10px;
-        gap: 5px;
-        grid-column-gap: 10px;
-    }
-
-    .single-items {
-        width: 60%;
-        height: 60%;
-    }
-
-    .single-items img {
-        width: 50%;
-        height: 50%;
-    }
-
-    .footer-singlItem-parent {
-        display: inline;
-        text-align: center;
-        padding-left: 30px;
-    }
-
-    .single-items div {
-        display: inline;
-    }
-
-    .button {
-        margin-bottom: 400px;
-    }
-
 }
