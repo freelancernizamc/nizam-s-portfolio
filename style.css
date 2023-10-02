@@ -26,12 +26,13 @@ nav {
     background: url(imges/navbg.png);
     background-position: center;
     background-size: cover;
+    opacity: 0.5;
     color: var(--secondColor);
     height: 100px;
     box-shadow: #bfeaf8;
 
-
 }
+
 
 @keyframes forLogo {
     0% {
@@ -72,14 +73,16 @@ nav .logo {
 }
 
 
-nav ul {
+nav #menu ul {
     display: flex;
-    padding-top: 35px;
+    align-items: center;
+
 }
 
 nav ul li {
     list-style-type: none;
     margin: 0 8px;
+
 }
 
 nav ul li a {
@@ -94,13 +97,12 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: var(--mainColor);
-    color: var(--third-color);
+    color: var(--secondColor);
     transition: 1s;
 
 }
 
 nav button {
-    margin-top: 30px;
     margin-right: 30px;
     padding: 10px;
     border-radius: 9px;
