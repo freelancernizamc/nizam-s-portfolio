@@ -19,3 +19,33 @@ setInterval(() => {
     imgE1.classList.add('fade-in-out'); // Add the CSS class for animation
     imgIndex++;
 }, 3000);
+
+
+// Email js
+
+(function () {
+    emailjs.init("tB1iuQ5YuAZK8YSFE");
+})();
+
+
+
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+        .sendForm(
+            'service_7hwyzcr',
+            'template_8iu9ycx',
+            refForm.current,
+            'tB1iuQ5YuAZK8YSFE'
+        )
+        .then(
+            () => {
+                alert('Your Message has been sent to Gbemisola')
+                window.location.reload(false)
+            },
+            () => {
+                alert('Failed to send message, please try again')
+            }
+        )
+}

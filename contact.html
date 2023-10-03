@@ -16,6 +16,7 @@
      <!-- external css file link hare -->
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="responsive.css">
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -93,15 +94,15 @@
                </div>
 
                <div class="form-parent">
-                    <form class="form-tag">
+                    <form class="form-tag" onSubmit={sendEmail}>
                          <div class="fullname-email-parent">
                               <div>
                                    <h4> Full Name: </h4>
-                                   <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                                   <input type="text" name="fullname" id="thename" placeholder="Full Name">
                               </div>
                               <div>
                                    <h4> Email Address: </h4>
-                                   <input type="email" placeholder="E-mail" name="email" id="email">
+                                   <input type="email" placeholder="E-mail" name="email" id="themail">
                               </div>
                          </div>
 
@@ -109,7 +110,7 @@
                          <input class="subject-input" placeholder="Subject" type="text" name="subject" id="subject">
 
                          <h4 class="subject-input-text"> Message </h4>
-                         <textarea class="form-textarea" placeholder="Message" name="" id=""></textarea>
+                         <textarea class="form-textarea" placeholder="Message" name="" id="themsg"></textarea>
 
                          <input class="form-button" type="submit" value="Send Message">
 

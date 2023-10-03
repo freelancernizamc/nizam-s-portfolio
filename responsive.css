@@ -1,246 +1,64 @@
 /* Your existing CSS code here */
 
 /* Responsive code for screens between 577px and 769px */
-@media only screen and (max-width: 769px) and (min-width: 577px) {
-    nav #menu ul {
+@media screen and (max-width: 576px) {
+    #smart-parent {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: bisque;
-        box-shadow: 0 40px 60px rgba(0, 128, 0, 0);
-        padding: 80px 0 0 10px;
 
     }
 
-    nav #menu ul.active {
-        right: 0px;
-
-    }
-
-    #mobile {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .header-button {
-        display: none;
-    }
-
-    #mobile i {
-        color: green;
-        font-size: 20px;
-
-    }
-
-    #close {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: green;
-        font-size: 24px;
-    }
-
-    nav ul li {
-        margin: 50px 0;
-    }
-
-    nav ul li a {
-        font-size: 22px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-        background: none;
-        color: red;
-    }
-
-
-
-
-    .socilaIcon>a>i {
-        font-size: 30px;
-        padding: 1px;
-        width: 40px;
-        line-height: 1.5;
+    .smart-text {
+        width: 100%;
     }
 
     #second-section {
         width: 100%;
-    }
-
-    .smart-image img {
-        width: 300px;
-        margin-right: 0px;
-    }
-
-    #smart-parent {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .form-parent {
-        color: #EAECF0;
-        display: flex;
-        flex-direction: column;
+        margin-top: 700px;
     }
 
     .services-area {
-        width: 100%;
-        padding: 10px;
-    }
-
-    #parent-section {
-        width: 100%;
-        margin: 0 auto;
-        padding: 50px 0;
-    }
-
-    .contact-container {
-        width: 100%;
-    }
-
-
-
-    .footer-container {
-        width: 100%;
-    }
-
-    .button a {
-        text-decoration: none;
-        background: linear-gradient(45deg, lightsalmon, tomato, red);
-        font-size: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        font-weight: 700;
-        color: var(--secondColor);
-    }
-}
-
-
-/* Responsive code for screens up to 576px */
-@media only screen and (max-width: 576px) {
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    nav .logo {
-        width: 70px;
-        height: 70px;
-    }
-
-
-
-    nav ul li a {
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    .half-width {
-        width: 100%;
-        float: none;
-        margin-left: 5%;
-        padding-left: 2%;
-        margin-top: 20px;
-    }
-
-    .half-width img {
-        display: none;
-    }
-
-
-
-    #second-section {
-        text-align: center;
-        margin-top: 400px;
-        /* Adjust this value as needed */
-    }
-
-
-
-    #smart-parent {
-        display: inline;
-    }
-
-    #third-section {
-        margin-top: 500px;
-        /* Adjust this value as needed */
-        margin-bottom: 250px;
-        /* Adjust this value as needed */
-    }
-
-    .form-parent {
-        color: #EAECF0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .forth-section {
-        margin-top: 450px;
-        margin-bottom: 3000px;
-        /* Adjust this value as needed */
-    }
-
-    .contact-container {
-        margin-top: 1300px;
-        margin-bottom: 2200px;
-        /* Adjust this value as needed */
-    }
-
-    .form-address-parent {
-        display: none;
-        margin-top: 200px;
+        margin-top: 550px;
     }
 
     .each-services-parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Adjust the number of columns as needed */
-        grid-gap: 10px;
+
+    }
+
+    .forth-section {
+        margin-top: 700px;
     }
 
     #single-items-parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Adjust the number of columns as needed */
-        grid-row-gap: 10px;
-        grid-column-gap: 10px;
+
     }
 
-    .single-items {
-        width: 100%;
-        height: auto;
-    }
-
-    .single-items img {
-        width: 100%;
-        height: auto;
-    }
-
-    footer {
+    .contact-container {
         margin-top: 300px;
     }
 
+    .form-parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-address-parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        margin-top: 900px;
+        margin-left: 50px;
+    }
+
     .footer-singlItem-parent {
-        text-align: center;
-    }
-
-    .single-items div {
-        text-align: center;
-    }
-
-    .button {
-        margin-bottom: 20px;
-        /* Adjust this value as needed */
+        display: flex;
+        flex-direction: column;
     }
 }
