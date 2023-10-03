@@ -2,6 +2,10 @@
 
 /* Responsive code for screens between 577px and 769px */
 @media screen and (max-width: 576px) {
+    .half-width {
+        flex-direction: column;
+    }
+
     #smart-parent {
         width: 100%;
         display: flex;
@@ -14,8 +18,8 @@
     }
 
     #second-section {
-        width: 100%;
-        margin-top: 700px;
+        width: auto;
+        margin-top: 500px;
     }
 
     .services-area {
@@ -34,12 +38,22 @@
 
     #single-items-parent {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
+    .single-items img {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    #parent-section {
+        width: auto;
+    }
+
     .contact-container {
-        margin-top: 300px;
+        margin-top: 1000px;
     }
 
     .form-parent {
@@ -52,12 +66,27 @@
         flex-direction: column;
     }
 
+    .form-single-address {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    footer {
+        width: auto;
+    }
+
     .footer-container {
+        width: auto;
         margin-top: 900px;
         margin-left: 50px;
     }
 
     .footer-singlItem-parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menuItem ul {
         display: flex;
         flex-direction: column;
     }
