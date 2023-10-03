@@ -28,7 +28,8 @@ const images = [
     'imges/background.png',
     'imges/Md-Nizam-uddin.jpeg',
     'imges/Nizam\ bd.jpg',
-    'imges/nizam.png'
+    'imges/nizam.png',
+    'imges/Nizam-bd2.jpg'
 ];
 
 let imgIndex = 0;

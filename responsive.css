@@ -2,9 +2,20 @@
 
 /* Responsive code for screens between 577px and 769px */
 @media screen and (max-width: 576px) {
-    .half-width {
-        flex-direction: column;
+    body {
+        width: 100%;
     }
+
+    .half-width {
+        width: auto;
+
+    }
+
+    .half-width img {
+        width: 100%;
+
+    }
+
 
     #smart-parent {
         width: 100%;
