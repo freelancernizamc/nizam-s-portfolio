@@ -141,7 +141,18 @@ nav button:hover {
     transition: 1s;
 }
 
+.topnav {
+    overflow: hidden;
+}
 
+.topnav a.active {
+    color: pink;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
 
 
 #mobile {

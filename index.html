@@ -18,6 +18,7 @@
      <!-- external css file link hare -->
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="responsive.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://code.jquery.com/jquery-3.6.1.min.js"
           integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
@@ -28,25 +29,28 @@
                <div class="logo">
 
                </div>
+               <div class="topnav" id="myTopnav">
+                    <div id="menu">
+                         <ul>
+                              <li><a class="active" href="index.html">Home</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="service.html">Services</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="projects.html">Projects</a></li>
+                              <li><a href="portfolio.html">Portfolio</a></li>
+                              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                   <i class="fa fa-bars"></i>
+                              </a>
+                         </ul>
 
-               <div id="menu">
-                    <ul>
-                         <li><a class="active" href="index.html">Home</a></li>
-                         <li><a href="about.html">About</a></li>
-                         <li><a href="service.html">Services</a></li>
-                         <li><a href="contact.html">Contact</a></li>
-                         <li><a href="projects.html">Projects</a></li>
-                         <li><a href="portfolio.html">Portfolio</a></li>
-                         <a href="#" id="close"><i class="far fa-times"></i></a>
-                    </ul>
-
+                    </div>
                </div>
                <div class="header-button">
                     <a onclick="downloadPDF()"><button>Download Resume</button></a>
                </div>
-               <div id="mobile">
+               <!-- <div id="mobile">
                     <i id="bar" class="fas fa-outdent"></i>
-               </div>
+               </div> -->
 
 
           </nav>
