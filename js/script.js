@@ -47,14 +47,39 @@ setInterval(() => {
     imgIndex++;
 }, 1000);
 
+// active
+
+
+// $('bar').click(function () {
+//     $('nav #menu ul').add('active')
+// });
+// $('close').click(function () {
+//     $('nav #menu ul').removeClass('active')
+// });
+
+
+
 
 // Responsive
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+// function myFunction() {
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "topnav") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = "topnav";
+//     }
+// }
+
+let openHam = document.querySelector('#openHam');
+let closeHam = document.querySelector('#closeHam');
+let navigationItems = document.querySelector('#navigation-items');
+
+const hamburgerEvent = (navigation, close, open) => {
+    navigationItems.style.display = navigation;
+    closeHam.style.display = close;
+    openHam.style.display = open;
+};
+
+openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
