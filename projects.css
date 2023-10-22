@@ -5,7 +5,8 @@
 .text-part {
     width: 65%;
     box-shadow: 2px;
-    border: 2px solid indigo;
+    border: 10px solid #FFC0CB;
+    border-top-right-radius: 20px;
     margin-left: 5px;
     margin-right: 10px;
     padding-left: 10px;
@@ -22,7 +23,9 @@
 }
 
 .gallary {
-    width: 20%;
+    width: 30%;
+    border: 10px solid aqua;
+    border-top-right-radius: 10px;
 }
 
 .tcolor {

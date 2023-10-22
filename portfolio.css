@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	
 }
 
 main {
@@ -22,24 +23,31 @@ main {
 
 div.gallery {
 	margin: 10px;
-	border: 1px solid #ccc;
+	border: 5px solid aqua;
 	float: left;
 	width: 170px;
 
 }
 
 div.gallery:hover {
-	border: 1px solid #777;
+	border: 5px solid pink;
 }
 
 div.gallery img {
 	width: 100%;
 	height: 400px;
+	
 }
 
 div.desc {
 	padding: 25px;
 	text-align: center;
+}
+div.desc a{
+	color:aqua;
+}
+div.desc a:hover{
+	color: pink;
 }
 
 .main-gallary {
